@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GoodBuy</title>
+    <!-- Bootstrap -->
+    <link href="../../Shopper Management/Shopper/css/bootstrap-4.4.1.css" rel="stylesheet">
+  </head>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">GoodBuy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Create an Account<span class="sr-only">(current)</span></a>
+            </li>
+			<li class="nav-item active">
+              <a class="nav-link" href="#">Update an Account<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+	<div class="container">
+		<h2>Create an Account</h2>
+		<hr>
+	  	<div class="container">
+			<div class="row justify-content-center bg-grey">
+				<div class="col-lg-8 col-12 jumbotron bg-white">
+            <form id="updateShopperForm" ng-submit="validateForm($event)" class="ng-pristine ng-valid">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter First Name">
+                 <span id="firstNameHelp" class="form-text text-muted" style="display: none;"></span>              
+                  </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter Last Name">
+                <span id="lastNameHelp" class="form-text text-muted" style="display: none;"></span>              
+              </div>
+			  <div class="form-group">
+                <label for="age">Age</label>
+                <input type="text" class="form-control" id="age" name="age" placeholder="Enter Age">
+                <span id="ageHelp" class="form-text text-muted" style="display: none;"></span>              
+              </div>
+			  <div class="form-group">
+                <label for="email">E-Mail</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email Address" aria-describedby="emailHelp">
+                <span id="emailHelp" class="form-text text-muted" style="display: none;">Please enter a valid e-mail address.</span>
+              </div>
+              <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address" name="address" placeholder="Enter Address">
+                <span id="addressHelp" class="form-text text-muted" style="display: none;"></span>              
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Phone Number" aria-describedby="phoneHelp">
+                <span id="phoneHelp" class="form-text text-muted" style="display: none;">Please enter a valid phone number.</span>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Update</button>
+              </div>          
+             </form>
+
+          </div>
+			</div>
+		</div>
+	</div>
+	
+	<main></main>
+       
+<footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+
+    </ul>
+    <p>&copy;2024 GoodBuy | All Rights Reserved</p>
+  </footer>
+	  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ <script>
+		  // Function to validate email address
+		  function validateEmail(email) {
+			var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+			return regex.test(email);
+		  }
+
+		  // Function to validate form fields
+		  function validateForm(event) {
+			event.preventDefault(); // Prevent default form submission
+			var form = document.getElementById('updateShopperForm');
+
+			// Get form fields
+			var firstName = form.elements['firstName'].value.trim();
+			var lastName = form.elements['lastName'].value.trim();
+			var age = form.elements['age'].value.trim();
+			var email = form.elements['email'].value.trim();
+			var address = form.elements['address'].value.trim();
+			var phone = form.elements['phone'].value.trim();
+
+			// Simple validation - Check if fields are empty
+			if (firstName === '' || lastName === '' || age === '' || email === '' || address === '' || phone === '') {
+			  alert('Please fill in all fields.');
+			  return;
+			}
+
+			// Validate email address
+			if (!validateEmail(email)) {
+			  alert('Please enter a valid email address.');
+			  return;
+			}
+
+			// If all fields are valid, proceed to update shopper details
+			var updatedShopperData = {
+			  firstName: firstName,
+			  lastName: lastName,
+			  age: age,
+			  email: email,
+			  address: address,
+			  phone: phone
+			};
+
+			// You can now use the updatedShopperData object to send the updated data to your server for processing
+			console.log('Updated Shopper data:', updatedShopperData);
+			alert('Shopper details updated successfully!');
+			form.reset(); // Reset the form after successful submission
+		  }
+
+		  // Add event listener for form submission
+		  document.getElementById('updateShopperForm').addEventListener('submit', validateForm);
+</script>
+
+  
+</body>
+</html>
