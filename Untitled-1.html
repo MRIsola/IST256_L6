@@ -63,6 +63,11 @@
                 <span id="lastNameHelp" class="form-text text-muted" style="display: none;"></span>              
               </div>
 			  <div class="form-group">
+                <label for="age">Age</label>
+                <input type="text" class="form-control" id="age" name="age" placeholder="Enter Age">
+                <span id="ageHelp" class="form-text text-muted" style="display: none;"></span>              
+              </div>
+			  <div class="form-group">
                 <label for="email">E-Mail</label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email Address" aria-describedby="emailHelp">
                 <span id="emailHelp" class="form-text text-muted" style="display: none;">Please enter a valid e-mail address.</span>
@@ -78,7 +83,7 @@
                 <span id="phoneHelp" class="form-text text-muted" style="display: none;">Please enter a valid phone number.</span>
               </div>
               <div class="text-center">
-                <button type="submit" class="btn btn-primary">Create New Shopper</button>
+                <button type="submit" class="btn btn-primary">Create an Account</button>
               </div>          
              </form>
 
@@ -118,6 +123,13 @@
       <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
 
     </ul>
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+    <p>&copy;2024 GoodBuy | All Rights Reserved</p>
+=======
+>>>>>>> 390d3cf44c74cbacec96f586a4753b7f2e65082b
+>>>>>>> Stashed changes
   </footer>
 	  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.4.1.min.js"></script>
@@ -126,6 +138,55 @@
     <script src="js/bootstrap-4.4.1.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+  	// Function to validate form fields
+	  function validateForm(event) {
+		event.preventDefault(); 
+		var form = document.getElementById('createShopperForm');
+
+	  function validateEmail(email) {
+		var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+		return regex.test(email);
+	  }
+
+		var firstName = form.elements['firstName'].value.trim();
+		var lastName = form.elements['lastName'].value.trim();
+		var age = form.elements['age'].value.trim();
+		var email = form.elements['email'].value.trim();
+		var address = form.elements['address'].value.trim();
+		var phone = form.elements['phone'].value.trim();
+
+
+		if (firstName === '' || lastName === '' || age === '' || email === '' || address === '' || phone === '') {
+		  alert('Please fill in all fields.');
+		  return;
+		}
+		  
+		if (!validateEmail(email)) {
+		  alert('Please enter a valid email address.');
+		  return;
+		}
+
+
+		// If all fields are valid, proceed to create an account
+		var shopperData = {
+		  firstName: firstName,
+		  lastName: lastName,
+		  age: age,
+		  email: email,
+		  address: address,
+		  phone: phone
+		};
+
+			// You can now use the shopperData object to send the data to your server for further processing (e.g., creating an account in a database)
+			console.log('Shopper data:', shopperData);
+			alert('Account created successfully!');
+			form.reset(); // Reset the form after successful submission
+		  }
+
+	  // Add event listener for form submission
+			document.getElementById('createShopperForm').addEventListener('submit', validateForm);
+	 </script>	  
 </body>
 
 </html>

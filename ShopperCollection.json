@@ -1,0 +1,26 @@
+{
+  "shoppers": [
+    {
+      "id": 1,
+      "name": "John",
+	  "lastName": "Doe",
+	  "age": 21,
+      "email": "john.doe@yahoo.com",
+      "phone": "123-456-7890",
+      "address": "123 Main St, Cityville, CA 12345",
+      "status": "active",
+    },
+    {
+      "id": 2,
+      "name": "Alice",
+      "lastName": "Smith",
+      "age": 25,
+      "email": "alice.smith@yahoo.com",
+      "phone": "987-654-3210",
+      "address": "456 Elm St, Townsville, NY 54321",
+      "status": "active",
+      }
+    },
+
+  ]
+}
